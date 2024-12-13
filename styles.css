@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('https://img.freepik.com/free-photo/top-view-circular-food-frame_23-2148723455.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */
+    background-position: center center; /* Centers the image */
+    height: 100%; /* Ensures full height coverage */
+}
+
+/* Media Query for Smaller Devices */
+@media (max-width: 768px) {
+    body {
+        background-size: auto 100%; /* Adjusts the background to fit the height on smaller devices */
+        background-attachment: scroll; /* Allows the background to scroll on smaller devices */
+    }
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: rgba(255, 87, 34, 0.8); /* Semi-transparent overlay */
+    color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Adjusted font size for better responsiveness */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px;
+}
+
+/* Recipes Grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.recipe-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h3 {
+    margin: 0.5rem 0;
+    color: #ff5722;
+}
+
+.recipe-card p {
+    margin: 0;
+}
+
+/* Chatbot Section */
+#chatbot iframe {
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 100%; /* Adjusts iframe to the screen width */
+    max-width: 400px;
+    height: 500px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent footer */
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
